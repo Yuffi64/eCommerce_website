@@ -4,77 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css"  
+    <title></title>
 </head>
 
 <body>
 <!--Header-->
 
-    <header class="h-200">
-        <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        li {
-            display: inline;
-        }
-        </style>
+    <header class="h-60 h-100">
         <nav>
-            
-            
-            <ul class="nav-flex">                         
+            <ul>
+                <li><a href="#HOME">Home</a></li>
+                <li><a href="#PRODUCTS">Products</a></li>
+                <li><a href="#ABOUT">About</a></li>
+                <li><a href="#CONTACT">Contact</a></li>
+                   
+                   
+                   
+                    <!--center-align-->
+                <div class="logo">
+                    <h1>CARACARA</h1>
+                    <img src="" alt="">
+                  
+                  
+                  
+                        <!-- Right-aligned links -->
+                 <div class="topnav-right">
+                    <input type="text" placeholder="Search..">
+                    <a href="#about">Cart</a>
+                 </div>
 
-                <li class="nav-flex__item"><a href="#home">HOME</a></li>
-                <li class="nav-flex__item"><a href="#about">ABOUT</a></li>
-                <li class="nav-flex__item"><a href="#products">PRODUCTS</a></li>
-                <li class="nav-flex__item"><a href="#contact">CONTACT</a></li>
-                <h1>CARACARA</h1>
-                <input type="text" placeholder="">
-                <div class="nav-flex__item"><a href="#Cart">CART</a></div>
-                <div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                </div>
-
-            </ul>
-
+             </ul>
         </nav>
     </header>
     
     <!---MAIN-->
 
-    <main class="h-200 lin-grad__lt-to-drk">
-        <section id="#home">
-            WELCOME HOME PAGE
-                <div>
-                    <img src="" alt="">
-                </div>
-             </div>
+    <main class="h-400 lin-grad__lt-to-drk">
+        <div class="center">
+            
+            <img src="./assets/images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="main ceramic photo" width="500" height="300">
+        
+        </div>
+        <section id="home">
+            WELCOME TO HOME PAGE
+               
+        
 
         </section>
         <section id="about">
-            
+            ABOUT
+
             
         </section>
         <section id="products">
-            <h2>Products</h2>
+           Our Products
             <div>
-                <div>
-                    <img src="./assets/images/Hello!.gif" alt="">
-                </div>                                         
-                <div>
+                <div class="card">
+                                                      
+                    <div class="imgbox">
+                        <h3>Product name</h3>
+                        <img src="./assets/images/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="Mundo bowls" width="150" height="175">
+                        
+                        <p> Tincidunt praesent semper feugiat nibh
+                            sed. Vulputate mi sit amet mauris
+                            commodo quis imperdiet massa. Amet
+                            tellus cras adipiscing enim eu turpis
+                            egestas pretium aenean.
+                        </p>
+                         <button>Add to Cart</button>
+                         <button>Wish List</button>
+                    </div>
+                        
                     <div>
-                        <h3>Title Text Here</h3>
+                        
                     </div>
                     <div>
-                        <p>Describe</p>
-                    </div>
-                    <div>
-                        <button>1</button>
-                        <button>2</button>
+                        
                     </div>
 ​
                 </div>
@@ -82,14 +88,53 @@
 ​
         </section>
         <section id="contact">
+
+            <h2>CONTACT US</h2>
+
+            <form action="/action_page.php">
+                <label for="email">EMAIL:</label><br>
+                <input type="text" id="email"  value=""><br>
+                
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+             </form> 
+             
+             
             CONTACT
+
+            <h3>Contact Form</h3>
+
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
-​
     </main>
-  <!--FOOTER-->  
-  <footer class="h-200">
+ 
+ 
+    <!--FOOTER-->  
+        <footer class="h-200">
+            <div>
+              <p>Author: Hege Refsnes</p>
+              <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+            </div>
+
+        </footer> 
 
 
-  </footer>
+
+
 </body>
 </html>
