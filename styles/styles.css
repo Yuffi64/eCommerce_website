@@ -1,7 +1,11 @@
 header {
     background-color:rgb(255, 255, 255)
 }
+.logo{
+    display: inline;
+    align-items: center;
 
+}
 
 nav ul{
     display: flex;
@@ -58,4 +62,24 @@ footer {
 }
 
 
+/* Content */
 
+.home-background{
+    height: 40vh;
+    background-color: black;
+    background-image: linear-gradient(
+          90deg, 
+          rgb(0, 0, 0) 20%, 
+          rgba(0, 0, 0, 0),
+          rgb(0, 0, 0) 80%
+         ),
+        
+      url(../assets/images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg);
+      
+    object-fit: cover;
+    position: relative;
+    background-position: center -2300px;
+    
+    width: 1300px;
+
+}
